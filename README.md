@@ -9,7 +9,11 @@ $ git clone https://github.com/orhanemree/deneyapkart-javascript-firebase.git
 $ cd deneyapkart-javascript-firebase
 ```
 * Deneyapkart ile şemadaki devreyi kurun ve kodu (``deneyapkart-javascript-firebase.ino``) karta gönderin.
-* Firebase hesabınızdan yeni bir web projesi oluşturup gerçek zamanlı veritabanı kullanmaya başlayın. Bu işlemden sonra proje ana dizininde bir ``config.js`` dosyası oluşturmanız gerekecek. Bu dosyaya aşağıdaki örnekte gösterilen firebaseConfig verisini kopyalayın. Ve en altına ``export default firebaseConfig`` yazın.
+* Firebase hesabınızdan yeni bir web projesi oluşturup gerçek zamanlı veritabanı kullanmaya başlayın. Veritabanına bağlanmak için Firebase config bilgilerini kullanmanız gerekiyor. Önrek config dosyası üzerinde bu işlemi yapabilirsiniz.
+```bash
+$ cp example.config.js config.js
+```
+* ``config.js`` dosyasını açın ve aşağıda resimdeki gibi Firebase'ın size verdiği firebaseConfig nesnesini dosyada uygun yere kopyalayın.
  
 <img src="./firebase-config.png" alt="deneyapkart-javascript-firebase">
 
@@ -25,6 +29,10 @@ $ npm run dev
 
 ## 🧮 Şema
 <img src="./scheme.jpg" alt="deneyapkart-javascript-firebase">
+
+## 🎉 Özellikler
+* İki farklı butondan dijital veri oku ve veritabanına kaydet.
+* Potansiyometreden analog veri oku ve veritabanına kaydet.
 
 ## 📚 Kaynaklar
 * [Deneyap Kart](https://deneyapkart.org/)
